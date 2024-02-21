@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gnjg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0020-tenant/tkrw-pr712-0075-0020-app/devfile-sample-gnjg@sha256:abeba5cf80dc5cfa6ab68dbf6e0fd5ad6c1d3ff973a90bb455f2c443af4b11cc
+        name: my-nodejs
+        resources: {}
+status: {}
